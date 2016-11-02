@@ -15,4 +15,21 @@
 
 <ion-content padding class="generated-test">
 
+  <ion-item>
+    <input type="text" (blur)="onBlur(this.value)" value="" placeholder="CEP">
+  </ion-item>
+  <ion-item>
+    <input type="text" name="endereco" value="">
+  </ion-item>
+  <ion-item>
+    <input type="text" name="cidade" value="">
+  </ion-item>
+  <ion-item>
+    <input type="text" name="UF" value="">
+  </ion-item>
+
+  <button (click)="buscarCep()">
+    Request CEP
+  </button>
+
 </ion-content>
